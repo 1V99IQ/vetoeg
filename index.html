@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vet0o's Links</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- FontAwesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <style>
+        :root {
+            --bg-color: #0f0f11;
+            --card-bg: #1a1a1d;
+            --text-color: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent-color: #3b82f6;
+            --hover-bg: #252529;
+            --border-radius: 16px;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-section {
+            margin-bottom: 30px;
+            animation: fadeIn 0.8s ease-out;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--card-bg);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            margin-bottom: 15px;
+            transition: var(--transition);
+        }
+        .profile-img:hover {
+            transform: scale(1.05);
+            border-color: var(--accent-color);
+        }
+        .name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .bio {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            max-width: 85%;
+            margin: 0 auto;
+        }
+        .links-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: var(--border-radius);
+            font-weight: 500;
+            font-size: 1rem;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .link-btn i {
+            position: absolute;
+            left: 20px;
+            font-size: 1.4rem;
+            transition: var(--transition);
+        }
+        .link-btn:hover {
+            transform: translateY(-3px);
+            background-color: var(--hover-bg);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .link-btn:hover .fa-instagram {
+            color: #E1306C;
+        }
+        .link-btn:hover .fa-tiktok {
+            color: #00f2ea;
+            text-shadow: 2px 2px 0px #ff0050;
+        }
+        .link-btn:hover .fa-youtube {
+            color: #FF0000;
+        }
+        .link-btn:hover .fa-facebook {
+            color: #1877F2;
+        }
+        .link-btn:hover .fa-whatsapp {
+            color: #25D366;
+        }
+        .link-btn:hover .fa-telegram {
+            color: #0088cc;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .link-btn:nth-child(1) {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.1s;
+        }
+        .link-btn:nth-child(2) {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.2s;
+        }
+        .link-btn:nth-child(3) {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.3s;
+        }
+        .link-btn:nth-child(4) {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.4s;
+        }
+        .link-btn:nth-child(5) {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.5s;
+        }
+        .link-btn:nth-child(6) {
+            animation: fadeIn 0.5s ease-out forwards;
+            opacity: 0;
+            animation-delay: 0.6s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-section">
+            <img src="veto_profile.png" alt="Profile Picture" class="profile-img" />
+            <h1 class="name">Vet0o</h1>
+            <p class="bio">Digital Creator | Short Videos | Social Media</p>
+        </div>
+        <div class="links-container">
+            <a href="https://instagram.com/vetoeg" target="_blank" class="link-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@vetoeg" target="_blank" class="link-btn">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+            <a href="https://youtube.com/@vet0o-eg" target="_blank" class="link-btn">
+                <i class="fab fa-youtube"></i> YouTube
+            </a>
+            <a href="https://youtube.com/@vetoshorts-hq" target="_blank" class="link-btn">
+                <i class="fab fa-youtube"></i> YouTube Shorts
+            </a>
+        </div>
+        <footer>&copy; 2023 Vet0o</footer>
+    </div>
+</body>
+</html>
